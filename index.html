@@ -65,32 +65,12 @@
       }
 
       .mark {
-        width: 28px;
-        height: 28px;
-        position: relative;
-      }
-
-      .mark::before,
-      .mark::after {
-        content: "";
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        border: 2px solid var(--accent);
-      }
-
-      .mark::before {
-        top: 0;
-        left: 0;
-        border-right: none;
-        border-bottom: none;
-      }
-
-      .mark::after {
-        bottom: 0;
-        right: 0;
-        border-left: none;
-        border-top: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 9px;
+        display: block;
+        object-fit: cover;
+        box-shadow: 0 1px 2px rgba(60, 40, 20, 0.12);
       }
 
       .brand-name {
@@ -223,7 +203,13 @@
   <body>
     <div class="wrap">
       <header class="brand">
-        <span class="mark" aria-hidden="true"></span>
+        <img
+          class="mark"
+          src="app-icon.png"
+          alt="ひとこま / Frame アプリアイコン"
+          width="40"
+          height="40"
+        />
         <span class="brand-name">ひとこま / Frame</span>
         <span class="lang-switch">
           <a href="#ja">日本語</a>
