@@ -187,6 +187,78 @@
         font-weight: 500;
       }
 
+      .other-apps {
+        margin-top: 96px;
+        padding-top: 32px;
+        border-top: 1px solid var(--line);
+      }
+
+      .other-title {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        color: var(--ink3);
+        text-transform: uppercase;
+        margin: 0 0 20px;
+        padding: 0;
+        border: none;
+      }
+
+      .app-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .app-card {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 16px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        text-decoration: none;
+        color: inherit;
+        transition: border-color 0.15s ease, transform 0.15s ease;
+      }
+
+      .app-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-1px);
+      }
+
+      .app-card-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 11px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .app-card-meta {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .app-card-name {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink);
+        margin-bottom: 2px;
+      }
+
+      .app-card-desc {
+        font-size: 13px;
+        color: var(--ink3);
+        line-height: 1.5;
+      }
+
+      .app-card-arrow {
+        color: var(--ink3);
+        font-size: 18px;
+        flex-shrink: 0;
+      }
+
       @media (max-width: 480px) {
         .wrap {
           padding: 40px 20px 64px;
@@ -377,6 +449,50 @@
         <div class="contact">
           For questions about this policy or the App, please contact:<br />
           <a href="mailto:akagamisora@gmail.com">akagamisora@gmail.com</a>
+        </div>
+      </section>
+
+      <section class="other-apps">
+        <h2 class="other-title">Other apps by Akagamisora</h2>
+        <div class="app-list">
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/mannaka-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/mannaka-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">まんなか - 集合駅を公平に提案</div>
+              <div class="app-card-desc">
+                参加者の最寄り駅から、 「ちょうど真ん中」の集合駅を提案
+              </div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
+          <a
+            class="app-card"
+            href="https://akagamisora.github.io/zutto-minesweeper-privacy/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="app-card-icon"
+              src="https://akagamisora.github.io/zutto-minesweeper-privacy/app-icon.png"
+              alt=""
+            />
+            <div class="app-card-meta">
+              <div class="app-card-name">ずっとマインスイーパー</div>
+              <div class="app-card-desc">
+                推測なしで必ず解ける、 終わらない 9×9 マインスイーパー
+              </div>
+            </div>
+            <span class="app-card-arrow">→</span>
+          </a>
         </div>
       </section>
 
